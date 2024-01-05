@@ -14,10 +14,6 @@ pipeline {
     }
 
    agent  any
-        options {
-                timestamps ()
-                authorizationMatrix('interface java.util.List')
-            }
     stages {
         stage('checkout') {
             steps {
